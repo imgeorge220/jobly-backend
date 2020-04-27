@@ -1,0 +1,62 @@
+{
+  "definitions": {},
+  "$schema": "",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "default": null,
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "$id": "#/properties/title",
+      "type": "string",
+      "title": "The Title Schema",
+      "default": "",
+      "examples": [
+        "Worker"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "salary": {
+      "$id": "#/properties/salary",
+      "type": "number",
+      "title": "The Salary Schema",
+      "default": 0,
+      "examples": [
+        100
+      ],
+      "minimum": 0.0
+    },
+    "equity": {
+      "$id": "#/properties/equity",
+      "type": "number",
+      "title": "The Equity Schema",
+      "default": 0.0,
+      "examples": [
+        0.01
+      ],
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "company_handle": {
+      "$id": "#/properties/company_handle",
+      "type": "string",
+      "title": "The Company_handle Schema",
+      "default": "",
+      "examples": [
+        "QQQ"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_token": {
+      "$id": "#/properties/_token",
+      "type": "string",
+      "title": "The Token Schema",
+      "default": "",
+      "examples": [
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaXNfYWRtaW4iOnRydWUsImlhdCI6MTU4MjMwNjI3MX0.ab6tDVZIr1fgKC0YwlHj53KFFGoHKoMhvTVFs18mumw"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

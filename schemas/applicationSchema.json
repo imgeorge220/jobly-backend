@@ -1,0 +1,39 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "state"
+  ],
+  "properties": {
+    "state": {
+      "$id": "#/properties/state",
+      "type": "string",
+      "enum": [
+        "interested",
+        "applied",
+        "accepted",
+        "rejected"
+      ],
+      "title": "The State Schema",
+      "default": "",
+      "examples": [
+        "applied"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_token": {
+      "$id": "#/properties/_token",
+      "type": "string",
+      "title": "The _token Schema",
+      "default": "",
+      "examples": [
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluMiIsImlzX2FkbWluIjp0cnVlLCJpYXQiOjE1ODIzMjM3MzN9.tec_Lxbf_v04afKHmU6tQFDpr3_hsa09Pl5KcdaW3p0"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

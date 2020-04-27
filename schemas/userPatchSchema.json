@@ -1,0 +1,75 @@
+{
+  "definitions": {},
+  "$schema": "",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "default": null,
+  "additionalProperties": false,
+  "properties": {
+    "password": {
+      "$id": "#/properties/password",
+      "type": "string",
+      "title": "The Password Schema",
+      "default": "",
+      "examples": [
+        "password1"
+      ],
+      "minLength": 6,
+      "pattern": "^(.*)$"
+    },
+    "first_name": {
+      "$id": "#/properties/first_name",
+      "type": "string",
+      "title": "The First_name Schema",
+      "default": "",
+      "examples": [
+        "me"
+      ],
+      "minLength": 1,
+      "pattern": "^(.*)$"
+    },
+    "last_name": {
+      "$id": "#/properties/last_name",
+      "type": "string",
+      "title": "The Last_name Schema",
+      "default": "",
+      "examples": [
+        "isaperson"
+      ],
+      "minLength": 1,
+      "pattern": "^(.*)$"
+    },
+    "email": {
+      "$id": "#/properties/email",
+      "type": "string",
+      "title": "The Email Schema",
+      "default": "",
+      "examples": [
+        "fake@news.edu"
+      ],
+      "pattern": "^(.*)$",
+      "format": "email"
+    },
+    "photo_url": {
+      "$id": "#/properties/photo_url",
+      "type": "string",
+      "title": "The Photo_url Schema",
+      "default": "",
+      "examples": [
+        "not a real url"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_token": {
+      "$id": "#/properties/_token",
+      "type": "string",
+      "title": "The Token Schema",
+      "default": "",
+      "examples": [
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaXNfYWRtaW4iOnRydWUsImlhdCI6MTU4MjMwNjI3MX0.ab6tDVZIr1fgKC0YwlHj53KFFGoHKoMhvTVFs18mumw"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
